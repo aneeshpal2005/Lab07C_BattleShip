@@ -51,8 +51,6 @@ public class Board {
         return true;
     }
 
-
-    // add the ship (set the button as occupied)
     public void addShip(Ship ship, int[][] positions) {
         ships.add(ship);
         ship.setPositions(positions);
@@ -62,7 +60,6 @@ public class Board {
         }
     }
 
-    // reset board
     public void reset() {
         for (int r = 0; r < 10; r++) {
             for (int c = 0; c < 10; c++) {
@@ -76,8 +73,6 @@ public class Board {
     public List<Ship> getShips() {
         return ships;
     }
-
-    //  5+4+3+3+2 = 17, make sure there are no more than 17 ships placed
 
     public boolean verifyNoOverlaps() {
         int occupiedCount = 0;
