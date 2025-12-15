@@ -15,7 +15,7 @@ public class GameStats {
 
     public void addHit() {
         totalHits++;
-        missCount = 0; // reset streak
+        missCount = 0;
     }
 
     public void reset() {
